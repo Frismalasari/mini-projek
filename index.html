@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangun Ruang Segitiga Web</title>
+    <!--CSS Internal-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Head Content-->
+    <header>
+        <h1> Welcome To My Triangle Counting</h1>
+        <p class="thema"> Website ini didesain untuk membantu pengguna menghitung luas dan keliling segitiga dengan cepat dan mudah  </p>
+        <!--Navigation-->
+        <nav>
+            <a class="bg-cream" href="">Luas Segitiga</a>
+            <br>
+            <a class="bg-cream" href="">Keliling Segitiga</a>
+        </nav>
+    </header>
+    <!--Main Content-->
+    <main>
+        <!--Luas-->
+        <section>
+            <header>
+                <h2>Luas Segitiga</h2>
+            </header>
+
+            <!--Konten Luas-->
+        <section>
+        <div class="triangle-container">
+        <svg class="triangle" viewBox="0 0 100 100">
+        <polygon points="50,10 90,90 10,90" />
+        </svg>
+        </div>
+        </section>
+
+
+            <p class="Rumus">Rumus Luas Segitiga</p>
+            <h4><strong>L = L = 1/2 x a x t</strong></h4>
+            <p class="Rumus">Keterangan :<br>
+            L = Luas Segitiga<br>
+            Alas = Alas segitiga<br>
+            Tinggi = Tinggi segitiga</p>
+
+            <!--Form Luas-->
+            <form>
+                <header>
+                    <h2>Hitung Luas Segitiga</h2>
+                </header>
+
+                <div>
+                    <label for="alas"> Alas:</label><br>
+                    <input type="number" id="alas" placeholder="Masukkan Alas Segitiga">
+                </div>
+                <div>
+                    <label for="tinggi"> Tinggi:</label><br>
+                    <input type="number" id="tinggi" placeholder="Masukkan Tinggi Segitiga">
+                </div>
+                <div>
+                    <button id="buttonluas" type="button">Hitung</button>
+                         <p id="output-luas"></p>
+                </div>
+            </form>
+        </section>
+        <!--Keliling-->
+        <section>
+            <header>
+                <h2>Keliling Segitiga</h2>
+            </header>
+            <!--Konten Keliling-->
+        <section>
+            <div class="triangle-container">
+            <svg class="triangle" viewBox="0 0 100 100">
+            <polygon points="50,10 90,90 10,90" />
+             </svg>
+            </div>
+            </section>
+
+
+            <p class="rumus">Rumus Keliling Segitiga:</p>
+            <h4><strong>K = sisi a + sisi b + sisi c</strong></h4>
+            <p class="rumus">Keterangan : <br>
+            K = Keliling segitiga<br>
+            sisi a = sisi pertama segitiga<br>
+            sisi b = sisi kedua segitiga <br>
+            sisi c = sisi ketiga segitiga</p>
+            
+            <!--Form Keliling-->
+            <form>
+                <header>
+                    <h2> Hitung Keliling Segitiga</h2>
+                </header>
+                <div>
+                    <label form="sisi a">sisi a:</label><br>
+                    <input type="number" id="sisi-a" placeholder="Masukkan sisi a">
+                </div>
+                <div>
+                    <label form="sisi b">sisi b:</label><br>
+                    <input type="number" id="sisi-b" placeholder="Masukkan sisi b">
+                </div>
+                <div>
+                    <label form="sisi c">sisi c:</label><br>
+                    <input type="number" id="sisi-c" placeholder="Masukkan sisi c">
+                </div>
+                <div>
+                    <button id="buttonkeliling" type="button">Hitung</button>
+                    <p id="output-keliling"></p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!--Footer Content-->
+    <footer>
+        <p>by: frismalasari f ladjuana. Semua perhitungan benar</p>
+    </footer>
+    <!--Javascript Internal-->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
